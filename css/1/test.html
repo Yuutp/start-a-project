@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>taskOne</title>
+<style>
+	.wrap{
+		background-color: #fff;
+		border: 1px solid #000;
+		border-radius: 5px;
+		margin: 20px auto;
+		min-width: 100px;
+		width: 40%;
+		zoom: 1;
+	}
+	.one{
+		font-size: 0;
+	}
+	.three{
+		display: table;
+	}
+	.four{
+		width: 38%;
+		padding: 1%;
+	}
+	.five{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.six{
+		padding: 1%;
+		width: 36vw;
+	}
+	.seven{
+		padding: 1%;
+		overflow: hidden;
+	}
+	.wrap:after{
+		content: "";
+		clear: both;
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+	.wrap>div{
+		border-radius: 5px;
+		margin-top: 2.5%;
+		margin-left: 2.5%;
+		padding-top: 30%;
+		width: 30%;
+	}
+	.one>div{
+		background-color: skyblue;
+		display: inline-block;
+	}
+	.two>div{
+		float: left;
+		background-color: orange;
+	}
+	.three>div{
+		background-color: maroon;
+		float: left;
+		display: table-cell;
+	}
+	.last{
+		margin-bottom: 2.5%;
+	}
+	.four>div{
+		float: left;
+		background-color: royalblue;
+		margin: 0;
+		padding-top: 32%;
+		width: 32%;
+	}
+	div.have{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	div.has{
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.five>div{
+		background-color: gray;
+		flex-grow: 3;
+		margin: 1.6%;
+		/*width: 80%;*/
+	}
+	.six>div{
+		background-color: black;
+		float: left;
+		width: 11vw;
+		height: 11vw;
+		padding: 0;
+		margin: 0.5vw;
+	}
+	.seven>div{
+		background-color: orangered;
+		float: left;
+		border-radius: 0px;
+		/* box-sizing: border-box; */
+		outline: 5px solid #fff;
+		padding: 16.666666666665%;
+		width: 0;
+		margin-top: 0;
+		margin-left: 0;
+	}
+</style>
+</head>
+<body>
+<!--方法一：inline-block-->
+	<div class="wrap one">
+		<div></div><div></div><div></div><div></div><div></div><div></div><div class="last"></div><div class="last"></div><div class="last"></div>
+	</div>
+<!--方法一：inline-block-->
+<!--方法二：float-->
+	<div class="wrap two">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="last"></div>
+	</div>
+<!--方法二：float-->
+<!--方法三：table-->
+	<div class="wrap three">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="last"></div>
+	</div>
+<!--方法三：table-->
+<!--方法四：float-->
+	<div class="wrap four">
+		<div></div>
+		<div class="have"></div>
+		<div></div>
+		<div class="has"></div>
+		<div class="have has"></div>
+		<div class="has"></div>
+		<div></div>
+		<div class="have"></div>
+		<div></div>
+	</div>
+<!--方法四：float-->
+<!--方法五：flex-->
+	<div class="wrap five">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+<!--方法五：flex-->
+<!--方法六：vw-->
+	<div class="wrap six">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+<!--方法六：vw-->
+<!--方法七：outline-->
+	<div class="wrap seven">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+	</div>
+<!--方法七：outline-->
+</body>
+</html>
