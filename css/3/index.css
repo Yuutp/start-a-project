@@ -3,7 +3,7 @@ body{
     margin:0;padding:0;
 }
 
-.back{
+.head{
     margin-top:3%;
 
 }
@@ -17,19 +17,10 @@ body{
 .text {
     margin:10% auto 0 auto;
     width: 70%;
-    color:whitesmoke;
-    text-align: center;
 }
 
 .footer{
     width: 70%;
     margin: 15%;
     text-align: center;
-}
-.r{
-    color:whitesmoke;
-    float: right
-}
-.l{
-    color:whitesmoke;float:left;
 }
